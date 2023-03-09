@@ -112,9 +112,9 @@ p, p1 {
   color: #ffc15e;
 }
 
-footer {
+.footer p {
   position: relative;
-  color: #000000;
+  color: #ffffff;
   font-family: Fira sans, sans-serif;
   font-size: 18px;
   text-align: center;
