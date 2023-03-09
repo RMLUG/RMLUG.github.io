@@ -1,10 +1,10 @@
 html, body {
   width: 100%;
-  background-color: #130303;
+  background-color: #003459;
 }
 
 h1, h2 {
-  color: #FFCDBC;
+  color: #00171f;
   font-family: Fira sans, sans-serif;
   text-align: center;
   margin-left: auto;
@@ -15,7 +15,7 @@ h1, h2 {
 }
 
 p, p1 {
-  color: #FFCDBC;
+  color: #00171f;
   font-family: Fira sans, sans-serif;
   font-size: 18px;
   text-align: center;
@@ -41,7 +41,7 @@ p, p1 {
   min-width: 300px;
   width: 35%;
   overflow: hidden;
-  background-color: #F5853F;
+  background-color: #ffffff;
   box-shadow: 0 5px 10px black;
   z-index: 1000;
 }
@@ -67,8 +67,8 @@ p, p1 {
 }
 
 .navbar li a:hover {
-  background-color: #2D080A;
-  color: #FFCDBC;
+  background-color: #f05d5e;
+  color: #ffffff;
 }
 
 .face {
@@ -96,7 +96,7 @@ p, p1 {
   margin-bottom: 50px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  background-color: #2D080A;
+  background-color: #ffffff;
   min-width: 300px;
   width: 35%;
   height: auto;
@@ -109,7 +109,7 @@ p, p1 {
 }
 
 .content a {
-  color: #F5853F;
+  color: #ffc15e;
 }
 
 footer {
