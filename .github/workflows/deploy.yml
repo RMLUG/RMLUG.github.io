@@ -1,0 +1,21 @@
+name: Deploy Zola site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - new-site
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Zola
+        uses: shalzz/zola-deploy-action@v0.17.0
+        with:
+          build_dir: public
+          token: ${{ secrets.GITHUB_TOKEN }}
+
