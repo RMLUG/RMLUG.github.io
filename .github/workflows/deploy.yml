@@ -1,15 +1,22 @@
-on: push
-name: Build and deploy GH Pages
+name: Build and deploy Zola site
+
+on:
+  push:
+    branches:
+      - main  # Deploy when main branch changes
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
-      - name: checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: build_and_deploy
-        uses: shalzz/zola-deploy-action@master
-        env:
-          # Target branch
-          PAGES_BRANCH: new-site
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and deploy
+        uses: shalzz/zola-deploy-action@v0.17.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          build_dir: public
+          # Optional if your site is in a subdirectory:
+          # build_args: --root mysite
+
